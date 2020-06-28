@@ -72,7 +72,7 @@ const Input: React.RefForwardingComponent<InputRef, InputProps> = (
   return (
     /* Se o Input tem o foco coloca borda e o ícone laranja.
       Ou se está preenchido deixa só o ícone laranja */
-    <Container isFocused={isFocused}>
+    <Container isFocused={isFocused} isErrored={!!error}>
       <Icon
         name={icon}
         size={20}
